@@ -22,13 +22,14 @@ function App() {
           });
         });
       }else{
-        console.log('fired');
         setCurrentUser(null);
       }
     });
 
     return () => unsubscribe();
   }, []);
+
+  console.log(currentUser);
 
   return (
     <div>
