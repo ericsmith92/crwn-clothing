@@ -29,7 +29,7 @@ function App() {
     return () => unsubscribe();
   }, []);
 
-  console.log(currentUser);
+  console.log({currentUser: currentUser});
 
   return (
     <div>
